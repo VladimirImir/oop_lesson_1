@@ -3,7 +3,7 @@ package com.dev.oop.lesson2;
 public class Computer {
 
     int ssd = 512;
-    int ram = 1024;
+    long ram = 1024;
 
     /** Коструктор по умолчанию. */
     Computer(){
@@ -16,7 +16,7 @@ public class Computer {
     }
 
     /** Конструктор с параметрами. */
-    Computer(int ssd, int newRam){
+    Computer(int ssd, long newRam){
         /** this - решает проблему конфликта имен. */
         this.ssd = ssd;
         ram = newRam;
@@ -24,6 +24,12 @@ public class Computer {
 
     void load(){
         System.out.println("Я загрузился!");
+    }
+    void load(boolean open){
+        System.out.println("Я загрузился!");
+        if (open){
+            System.out.println("Я открыл крышку!");
+        }
     }
 
     void printState(){

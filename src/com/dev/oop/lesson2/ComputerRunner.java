@@ -5,6 +5,7 @@ public class ComputerRunner {
     public static void main(String[] args) {
 
         /** Ctrl + Alt + V - создать переменную. */
+        /** Ctrl + P - показать все перегрузки метода. */
 
         Computer computer = new Computer();
         computer.printState();
@@ -14,6 +15,8 @@ public class ComputerRunner {
 
         Computer computer3 = new Computer(4096, 4096);
         computer3.printState();
+        
+        computer3.load(true);
 
         /*System.out.println("-------");
         computer.load();
