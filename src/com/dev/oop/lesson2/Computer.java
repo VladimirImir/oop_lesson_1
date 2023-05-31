@@ -26,7 +26,7 @@ public class Computer {
     void load(){
         System.out.println("Я загрузился!");
     }
-    
+
     void load(boolean open){
         System.out.println("Я загрузился!");
         if (open){
